@@ -4,7 +4,11 @@
 
 void on_interruption(int value)
 {
-    std::cout << "Interrupted. Value = " << value << "." << std::endl;
+    if (value == SIGINT) 
+    {
+        std::cout << "Interrupted." << std::endl;
+        exit(-1073741510); // First CTRL+C does not interrupt the execution of main function on Windows 10.
+    }
 }
 
 int main()
