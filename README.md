@@ -10,7 +10,7 @@ Execute all test programs without debugging to get correct results.
 Every event handler is standalone, so no other event handler is called at the same time.
 
 So, all these events lead to program termination in a unique way:
-* BreakEvent
 * ExitEvent
-* InterruptionEvent
 * UnhandledExceptionEvent
+* InterruptionEvent
+* BreakEvent
