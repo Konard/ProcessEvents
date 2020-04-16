@@ -7,6 +7,6 @@ void on_exit()
 
 int main()
 {
-    atexit(on_exit);
+    std::atexit(on_exit);
     std::cout << "Main." << std::endl;
 }

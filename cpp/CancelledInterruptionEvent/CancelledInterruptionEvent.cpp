@@ -6,8 +6,8 @@ void on_interruption(int signal_value)
 {
     if (signal_value == SIGINT)
     {
-        std::cout << "Interrupted." << std::endl;
-        std::raise(SIGINT); // First CTRL+C does not interrupt the execution of main function on Windows 10.
+        std::signal(SIGINT, on_interruption);
+        std::cout << "Interruption cancelled." << std::endl;
     }
 }
 
