@@ -1,5 +1,5 @@
 # ProcessEvents
-C# and C++ comparison of process events
+C# and C++ comparison of process events. This repository was created to research the ways of translation of events from C# to C++.
 
 ## Notes
 
